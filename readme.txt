@@ -14,5 +14,4 @@ Embed Plotly graphs in wordpress admin.
 
 This plugin helps to include plotly graphs from a url.
 when you paste http://plot.ly/~chris/1638 in wordpress' editor,
-it will be displayed the graph replacing the url. Same behaviour happens in a link from youtube
-This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
+it will be displayed the graph replacing the url. Same behaviour happens in a link from youtube.
