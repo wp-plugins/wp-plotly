@@ -21,7 +21,8 @@ function plotly_embed_handler($matches, $attr, $url, $rawattr){
     $parsed = parse_url($url);
     $items = explode('/', $parsed['path']);
     $username = substr($items[1], 1);
-    $idlocal = explode('.', $items[2])[0];
+    $idlocal = explode('.', $items[2]);
+    $idlocal = $idlocal[0];
 
     $localurl = "https://plot.ly/~$username/$idlocal";
     $image = "<img src='${localurl}.png' onerror='this.onerror=null;this.src=\"https://plot.ly/404.png\"' />";
