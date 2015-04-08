@@ -3,7 +3,7 @@
  * Plugin Name: Plotly
  * Plugin URI: http:s//github.com/plotly/wp-plotly
  * Description: Embed plotly graphs in your posts
- * Version: 1.0.0
+ * Version: 1.0.2
  * Author: André Farzat
  * Author URI: https://plot.ly
  * License: GPL2
