@@ -4,7 +4,7 @@ Donate link: http://plot.ly/
 Tags: plotly, plot.ly, embed, graph, graphs
 Requires at least: 3.0.1
 Tested up to: 4.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: MIT
 License URI: http://opensource.org/licenses/MIT
 
@@ -23,3 +23,6 @@ Initial version
 
 1.0.1
 Bugfix: Fixing syntax for older php
+
+1.0.2
+Making it available in wordpress.org
