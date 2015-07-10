@@ -13,16 +13,12 @@
 
 add_action( 'init', 'plotly_add_embed_handlers' );
 function plotly_add_embed_handlers() {
-    wp_embed_register_handler( 'plotly', '#https?://(www\.)?plot\.ly/.*#i', 'plotly_embed_handler' );
+    wp_embed_register_handler( 'plotly', '#https?://(www\.)?plot\.ly/~([\w\-\.]+)/(\d+).*#i', 'plotly_embed_handler' );
 }
 
 function plotly_embed_handler($matches, $attr, $url, $rawattr){
-
-    $parsed = parse_url($url);
-    $items = explode('/', $parsed['path']);
-    $username = substr($items[1], 1);
-    $idlocal = explode('.', $items[2]);
-    $idlocal = $idlocal[0];
+    $username = $matches[2];
+    $idlocal = $matches[3];
 
     $localurl = "https://plot.ly/~$username/$idlocal";
     $image = "<img src='${localurl}.png' onerror='this.onerror=null;this.src=\"https://plot.ly/404.png\"' />";
